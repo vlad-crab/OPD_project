@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 74: expected 'simple_expression' not found.
+    yalign = 0, xalign=0.8
+           ^
+
+Ren'Py Version: Ren'Py 7.6.3.23091805
+Sat Nov 11 00:54:56 2023
