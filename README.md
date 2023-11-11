@@ -4,7 +4,7 @@
 
 Для того чтобы запустить игру следует скачать одну из следующих версий
 
-[Для MacOS](https://github.com/vlad-crab/OPD_project/raw/master/О_моем_перерождении_в_сервер-latest/О_моем_перерождении_в_сервер-latest-mac.zip)
+[Для MacOS](https://github.com/vlad-crab/OPD_project/blob/main/О_моем_перерождении_в_сервер-latest/О_моем_перерождении_в_сервер-latest-mac.zip)
 
 [Для Windows](https://github.com/vlad-crab/OPD_project/raw/main/О_моем_перерождении_в_сервер-latest/О_моем_перерождении_в_сервер-latest-windows.zip)
 
