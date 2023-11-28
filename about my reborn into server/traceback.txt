@@ -1,36 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/script.rpy:74
-  File "game/script.rpy", line 73, in script
-    show dobrosplav smile:
-Exception: Expression u'2' is not an ATL transform, and so cannot be included in an ATL interpolation.
+While running game code:
+  File "game/script.rpy", line 389, in script
+    define s = Character(server_name, color='f2d0ea', image='server chan')
+  File "game/script.rpy", line 389, in <module>
+    define s = Character(server_name, color='f2d0ea', image='server chan')
+NameError: name 'server_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 73, in script
-    show dobrosplav smile:
-  File "renpy/ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "renpy/ast.py", line 1398, in show_imspec
-    atl=atl)
-  File "renpy/exports.py", line 759, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "renpy/display/core.py", line 1280, in add
-    thing.visit_all(lambda d : None)
-  File "renpy/display/core.py", line 674, in visit_all
-    for d in self.visit():
-  File "renpy/atl.py", line 636, in visit
-    block = self.compile()
-  File "renpy/atl.py", line 543, in compile
-    block = self.atl.compile(self.context)
-  File "renpy/atl.py", line 745, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "renpy/atl.py", line 1097, in compile
-    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
-Exception: Expression u'2' is not an ATL transform, and so cannot be included in an ATL interpolation.
+  File "game/script.rpy", line 389, in script
+    define s = Character(server_name, color='f2d0ea', image='server chan')
+  File "renpy/ast.py", line 2508, in execute
+    self.set()
+  File "renpy/ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "renpy/python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 389, in <module>
+    define s = Character(server_name, color='f2d0ea', image='server chan')
+NameError: name 'server_name' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.3.23091805
-О моем перерождении в сервер 1.0
-Sat Nov 11 00:56:51 2023
+О_моем_перерождении_в_сервер 3.0
+Tue Nov 28 11:09:00 2023
