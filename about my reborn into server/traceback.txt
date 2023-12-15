@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 463, in script
-    scene bg inside computer stuffed
-Exception: Image 'bg inside computer' does not accept attributes 'stuffed'.
+  File "game/script.rpy", line 490, in script
+    scene bg inside computer danger
+Exception: Image 'bg inside computer' does not accept attributes 'danger'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 463, in script
-    scene bg inside computer stuffed
+  File "game/script.rpy", line 490, in script
+    scene bg inside computer danger
   File "renpy/ast.py", line 1562, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "renpy/ast.py", line 1398, in show_imspec
@@ -22,9 +22,9 @@ Full traceback:
     args.extraneous()
   File "renpy/display/core.py", line 364, in extraneous
     " ".join(self.args),
-Exception: Image 'bg inside computer' does not accept attributes 'stuffed'.
+Exception: Image 'bg inside computer' does not accept attributes 'danger'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.3.23091805
 О_моем_перерождении_в_сервер 3.0
-Fri Dec 15 20:48:50 2023
+Sat Dec 16 01:53:32 2023

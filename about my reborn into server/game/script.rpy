@@ -460,7 +460,7 @@ label story_continues_2:
 
     f "Выгружаю архив на сервер"
 
-    scene bg inside computer #stuffed
+    scene bg inside computer stuffed
     with fade
     show dobrosplav surprise at right2
     show server chan at left2
@@ -469,7 +469,7 @@ label story_continues_2:
 
     f "Разархивируешь, типо? Даже интересно, как ты это сейчас видишь?"
 
-    scene bg computer inside
+    scene bg inside computer
     with fade
     show dobrosplav normal at right2
     show server chan at left2
@@ -484,7 +484,7 @@ label story_continues_2:
 
     f "Пробую запустить..."
 
-    scene bg computer inside #danger
+    scene bg inside computer_danger
     show dobrosplav sad at right2
     show server chan at left2
 
@@ -495,7 +495,7 @@ label story_continues_2:
 
     f "Просто не паникуйте, всё скоро буду готово."
 
-    scene bg computer inside
+    scene bg inside computer
     show dobrosplav smile at right2
     show server chan at left2
 
@@ -522,7 +522,7 @@ label story_continues_2:
 
     s "Сейчас увидишь."
 
-    scene bg computer inside #extremely stuffed
+    scene bg inside computer extremely stuffed
     show dobrosplav normal at right2
     show server chan at left2
 
@@ -532,7 +532,7 @@ label story_continues_2:
 
     d "Я думаю, что смогу найти ненужные файлы и выбросить, дайте 5 минут."
 
-    scene bg computer inside #stuffed
+    scene bg inside computer stuffed
     with fade
     show dobrosplav smile at right2
     show server chan at left2
@@ -721,7 +721,7 @@ label BadEnding:
     f "Да и, один хрен, ты самостоятельно учиться будешь."
     f "Бесплатные курсы по программированию в Интернете достать легко, так что лучше идти туда, гду учиться легче…"
 
-    scene bg bedroom # Добросплав сидит за компом в новогоднем колпаке, разговаривает по зажатому м/д плечом и головой телефону и ожесточённо печатает
+    scene bg bedroom
     show dobrosplav sad at right2
     show friend at left2
 
@@ -826,7 +826,7 @@ label NoReload:
     f "Но подожди, неужели ты серьёзно готов просто бросить всё, что было в реальном мире?"
     f "Семью, друзей, мечты, в конце концов?"
 
-    d "Я не собираюсь никого и ничего бросать, я просто найду более безопасный способ отсюда выбраться, вот и всё!""
+    d "Я не собираюсь никого и ничего бросать, я просто найду более безопасный способ отсюда выбраться, вот и всё!"
     d "Ты можешь идти."
 
     d "Я обязательно найду гарантированный безопасный выход! Иди, не переживай"
@@ -859,13 +859,13 @@ label NoReload:
 
     s "Перемещаешься ты реально быстро… {w}Гигабайтов тридцать в секунду."
 
-    d "Не то, чтобы для меня это что-то значило…
+    d "Не то, чтобы для меня это что-то значило…"
     d "..."
     d "Кажется чувствую!"
 
     s "Край?"
 
-    u "^mz%IC*jNi1jp*QzhJIU}iRf6SNQLff|m%*B7&P8ZQ.0m_qs>d']BZ'R1C0I%RAhR/4bpb]5)wz^5:"
+    u "mzICjNi1jp*QzhJIUiRf6SNQLffmB7P8ZQ0m_qsdBZR1C0IRAhR4bpb5wz5:"
 
     scene bg blackout
     show dobrosplav normal at center
@@ -879,14 +879,18 @@ label NoReload:
 
     s "Так, погоди. Эээй!..."
 
-    scene bg lightInDarkness # Белое свечение почти на весь экран  (лучи, а не просто пятно), только края чёрные
+    scene bg glow
 
     d "Свет в конце туннеля? Я чувствую себя странно… Будь то рассудо…"
 
     "…а?"
 
-    scene bg lightning # Заряд тока зигзагом на экране, звук электрического удара током
-
-    jump BeOrNotToBe
+    scene bg lightning
+    "вы умерли, хотите попробовать выбрать другой путь?"
+    menu:
+        "Да конечно":
+            jump BeOrNotToBe
+        "Нет спасибо, я наигрался":
+            return
     return
 

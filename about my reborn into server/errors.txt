@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 604: choice menuitem expects a non-empty block.
-    "Отказаться от перезагрузки":
-                                 ^
+File "game/script.rpy", line 865: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        d "Не то, чтобы для меня это что-то значило…
 
 Ren'Py Version: Ren'Py 7.6.3.23091805
-Fri Dec 15 21:07:58 2023
+Fri Dec 15 23:31:06 2023
