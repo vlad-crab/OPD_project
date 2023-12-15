@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 389, in script
-    define s = Character(server_name, color='f2d0ea', image='server chan')
-  File "game/script.rpy", line 389, in <module>
-    define s = Character(server_name, color='f2d0ea', image='server chan')
-NameError: name 'server_name' is not defined
+  File "game/script.rpy", line 463, in script
+    scene bg inside computer stuffed
+Exception: Image 'bg inside computer' does not accept attributes 'stuffed'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 389, in script
-    define s = Character(server_name, color='f2d0ea', image='server chan')
-  File "renpy/ast.py", line 2508, in execute
-    self.set()
-  File "renpy/ast.py", line 2522, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "renpy/python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 389, in <module>
-    define s = Character(server_name, color='f2d0ea', image='server chan')
-NameError: name 'server_name' is not defined
+  File "game/script.rpy", line 463, in script
+    scene bg inside computer stuffed
+  File "renpy/ast.py", line 1562, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "renpy/ast.py", line 1398, in show_imspec
+    atl=atl)
+  File "renpy/exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "renpy/display/core.py", line 499, in _duplicate
+    args.extraneous()
+  File "renpy/display/core.py", line 364, in extraneous
+    " ".join(self.args),
+Exception: Image 'bg inside computer' does not accept attributes 'stuffed'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 7.6.3.23091805
 О_моем_перерождении_в_сервер 3.0
-Tue Nov 28 11:09:00 2023
+Fri Dec 15 20:48:50 2023

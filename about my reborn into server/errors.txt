@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 311: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Если ты сможешь найти, где я прячусь, то вперед!"
-                                                      ^
+File "game/script.rpy", line 604: choice menuitem expects a non-empty block.
+    "Отказаться от перезагрузки":
+                                 ^
 
 Ren'Py Version: Ren'Py 7.6.3.23091805
-Tue Nov 28 11:08:31 2023
+Fri Dec 15 21:07:58 2023
